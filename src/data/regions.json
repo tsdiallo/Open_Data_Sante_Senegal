@@ -1,0 +1,16 @@
+[
+  { "code": "DK", "nom": "Dakar",       "population": 4020000, "superficie_km2": 547   },
+  { "code": "TH", "nom": "Thiès",       "population": 2250000, "superficie_km2": 6670  },
+  { "code": "DB", "nom": "Diourbel",    "population": 2000000, "superficie_km2": 4824  },
+  { "code": "KL", "nom": "Kaolack",     "population": 1250000, "superficie_km2": 5357  },
+  { "code": "SL", "nom": "Saint-Louis", "population": 1100000, "superficie_km2": 19034 },
+  { "code": "LG", "nom": "Louga",       "population": 1090000, "superficie_km2": 24889 },
+  { "code": "TC", "nom": "Tambacounda", "population": 970000,  "superficie_km2": 42364 },
+  { "code": "FK", "nom": "Fatick",      "population": 910000,  "superficie_km2": 7535  },
+  { "code": "KD", "nom": "Kolda",       "population": 900000,  "superficie_km2": 13771 },
+  { "code": "KF", "nom": "Kaffrine",    "population": 810000,  "superficie_km2": 11181 },
+  { "code": "MT", "nom": "Matam",       "population": 730000,  "superficie_km2": 29445 },
+  { "code": "ZG", "nom": "Ziguinchor",  "population": 685000,  "superficie_km2": 7339  },
+  { "code": "SE", "nom": "Sédhiou",     "population": 565000,  "superficie_km2": 7293  },
+  { "code": "KE", "nom": "Kédougou",    "population": 226000,  "superficie_km2": 16800 }
+]

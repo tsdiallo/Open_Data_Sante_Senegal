@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "source": "Listes pharmacies de garde (Ordre des Pharmaciens du Sénégal, consolidé pour MVP)",
+    "maj": "2024-11-10",
+    "date_garde": "2024-11-16"
+  },
+  "rows": [
+    { "id": "P01", "nom": "Pharmacie du Point E",        "region_code": "DK", "commune": "Point E",        "adresse": "Avenue Cheikh Anta Diop",      "de_garde": true  },
+    { "id": "P02", "nom": "Pharmacie Guédiawaye",        "region_code": "DK", "commune": "Guédiawaye",     "adresse": "Rte des Niayes",               "de_garde": true  },
+    { "id": "P03", "nom": "Pharmacie Sacré-Cœur",        "region_code": "DK", "commune": "Sacré-Cœur",     "adresse": "VDN",                           "de_garde": false },
+    { "id": "P04", "nom": "Pharmacie Liberté 6",         "region_code": "DK", "commune": "Liberté 6",      "adresse": "Rue L6-22",                     "de_garde": true  },
+    { "id": "P05", "nom": "Pharmacie Yoff",              "region_code": "DK", "commune": "Yoff",           "adresse": "Rte de l'Aéroport",            "de_garde": false },
+    { "id": "P06", "nom": "Pharmacie Parcelles U10",     "region_code": "DK", "commune": "Parcelles Assainies", "adresse": "Unité 10",                "de_garde": true  },
+    { "id": "P07", "nom": "Pharmacie Mermoz",            "region_code": "DK", "commune": "Mermoz",         "adresse": "Corniche-Ouest",                "de_garde": false },
+
+    { "id": "P08", "nom": "Pharmacie Thiès Centre",      "region_code": "TH", "commune": "Thiès",          "adresse": "Avenue Léopold Sédar Senghor", "de_garde": true  },
+    { "id": "P09", "nom": "Pharmacie Mbour Plage",       "region_code": "TH", "commune": "Mbour",          "adresse": "Rte de la Petite-Côte",        "de_garde": false },
+
+    { "id": "P10", "nom": "Pharmacie Touba Mosquée",     "region_code": "DB", "commune": "Touba",          "adresse": "Rte de la Grande Mosquée",     "de_garde": true  },
+    { "id": "P11", "nom": "Pharmacie Diourbel",          "region_code": "DB", "commune": "Diourbel",       "adresse": "Centre-ville",                  "de_garde": false },
+
+    { "id": "P12", "nom": "Pharmacie Kaolack Sud",       "region_code": "KL", "commune": "Kaolack",        "adresse": "Bd du Général de Gaulle",      "de_garde": true  },
+
+    { "id": "P13", "nom": "Pharmacie Ndar",              "region_code": "SL", "commune": "Saint-Louis",    "adresse": "Île Nord",                      "de_garde": true  },
+
+    { "id": "P14", "nom": "Pharmacie Ziguinchor",        "region_code": "ZG", "commune": "Ziguinchor",     "adresse": "Avenue Emile Badiane",         "de_garde": false },
+
+    { "id": "P15", "nom": "Pharmacie Tamba",             "region_code": "TC", "commune": "Tambacounda",    "adresse": "Rte de Kidira",                 "de_garde": true  }
+  ]
+}

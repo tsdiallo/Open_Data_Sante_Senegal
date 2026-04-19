@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Annuaire eSanté / Ministère de la Santé (consolidé pour MVP)",
+    "maj": "2024-09-30"
+  },
+  "rows": [
+    { "id": "E01", "nom": "Hôpital Principal de Dakar",            "type": "Hôpital",         "region_code": "DK", "commune": "Dakar-Plateau",    "lat": 14.6628, "lng": -17.4339, "telephone": "+221 33 839 50 50" },
+    { "id": "E02", "nom": "Hôpital Aristide Le Dantec",              "type": "Hôpital",         "region_code": "DK", "commune": "Dakar-Plateau",    "lat": 14.6744, "lng": -17.4333, "telephone": "+221 33 889 38 00" },
+    { "id": "E03", "nom": "Hôpital Fann",                            "type": "Hôpital",         "region_code": "DK", "commune": "Fann",             "lat": 14.6910, "lng": -17.4640, "telephone": "+221 33 869 18 18" },
+    { "id": "E04", "nom": "Hôpital Général Idrissa Pouye (Grand-Yoff)", "type": "Hôpital",       "region_code": "DK", "commune": "Grand-Yoff",       "lat": 14.7287, "lng": -17.4667, "telephone": "+221 33 869 74 00" },
+    { "id": "E05", "nom": "Hôpital de Pikine",                       "type": "Hôpital",         "region_code": "DK", "commune": "Pikine",           "lat": 14.7549, "lng": -17.3964, "telephone": "+221 33 834 24 80" },
+    { "id": "E06", "nom": "Centre de santé Gaspard Kamara",          "type": "Centre de santé", "region_code": "DK", "commune": "Grand-Dakar",      "lat": 14.7112, "lng": -17.4522, "telephone": "" },
+    { "id": "E07", "nom": "Centre de santé Nabil Choucair",          "type": "Centre de santé", "region_code": "DK", "commune": "HLM",              "lat": 14.7233, "lng": -17.4478, "telephone": "" },
+
+    { "id": "E08", "nom": "Hôpital Régional de Thiès",               "type": "Hôpital",         "region_code": "TH", "commune": "Thiès",            "lat": 14.7886, "lng": -16.9260, "telephone": "+221 33 951 11 91" },
+    { "id": "E09", "nom": "Centre de santé de Mbour",                "type": "Centre de santé", "region_code": "TH", "commune": "Mbour",            "lat": 14.4198, "lng": -16.9648, "telephone": "" },
+    { "id": "E10", "nom": "Centre de santé de Tivaouane",            "type": "Centre de santé", "region_code": "TH", "commune": "Tivaouane",        "lat": 14.9496, "lng": -16.8167, "telephone": "" },
+
+    { "id": "E11", "nom": "Hôpital Régional Heinrich Lübke",         "type": "Hôpital",         "region_code": "DB", "commune": "Diourbel",         "lat": 14.6521, "lng": -16.2295, "telephone": "" },
+    { "id": "E12", "nom": "Hôpital Matlaboul Fawzayni",              "type": "Hôpital",         "region_code": "DB", "commune": "Touba",            "lat": 14.8667, "lng": -15.8833, "telephone": "" },
+
+    { "id": "E13", "nom": "Hôpital Régional El Hadji Ibrahima Niass","type": "Hôpital",         "region_code": "KL", "commune": "Kaolack",          "lat": 14.1518, "lng": -16.0727, "telephone": "" },
+    { "id": "E14", "nom": "Centre de santé de Nioro",                "type": "Centre de santé", "region_code": "KL", "commune": "Nioro",            "lat": 13.7486, "lng": -15.7894, "telephone": "" },
+
+    { "id": "E15", "nom": "Hôpital Régional de Saint-Louis",         "type": "Hôpital",         "region_code": "SL", "commune": "Saint-Louis",      "lat": 16.0314, "lng": -16.5057, "telephone": "" },
+    { "id": "E16", "nom": "Centre de santé de Richard-Toll",         "type": "Centre de santé", "region_code": "SL", "commune": "Richard-Toll",     "lat": 16.4625, "lng": -15.7000, "telephone": "" },
+
+    { "id": "E17", "nom": "Hôpital Amadou Sakhir Mbaye",             "type": "Hôpital",         "region_code": "LG", "commune": "Louga",            "lat": 15.6179, "lng": -16.2292, "telephone": "" },
+
+    { "id": "E18", "nom": "Hôpital Régional de Tambacounda",         "type": "Hôpital",         "region_code": "TC", "commune": "Tambacounda",      "lat": 13.7707, "lng": -13.6673, "telephone": "" },
+
+    { "id": "E19", "nom": "Hôpital Régional de Fatick",              "type": "Hôpital",         "region_code": "FK", "commune": "Fatick",           "lat": 14.3390, "lng": -16.4119, "telephone": "" },
+
+    { "id": "E20", "nom": "Hôpital Régional de Kolda",               "type": "Hôpital",         "region_code": "KD", "commune": "Kolda",            "lat": 12.8939, "lng": -14.9412, "telephone": "" },
+
+    { "id": "E21", "nom": "Centre de santé de Kaffrine",             "type": "Centre de santé", "region_code": "KF", "commune": "Kaffrine",         "lat": 14.1059, "lng": -15.5508, "telephone": "" },
+
+    { "id": "E22", "nom": "Hôpital Régional de Matam",               "type": "Hôpital",         "region_code": "MT", "commune": "Matam",            "lat": 15.6559, "lng": -13.2553, "telephone": "" },
+
+    { "id": "E23", "nom": "Hôpital Régional de Ziguinchor",          "type": "Hôpital",         "region_code": "ZG", "commune": "Ziguinchor",       "lat": 12.5641, "lng": -16.2719, "telephone": "" },
+
+    { "id": "E24", "nom": "Centre de santé de Sédhiou",              "type": "Centre de santé", "region_code": "SE", "commune": "Sédhiou",          "lat": 12.7081, "lng": -15.5569, "telephone": "" },
+
+    { "id": "E25", "nom": "Centre de santé de Kédougou",             "type": "Centre de santé", "region_code": "KE", "commune": "Kédougou",         "lat": 12.5575, "lng": -12.1747, "telephone": "" }
+  ]
+}
