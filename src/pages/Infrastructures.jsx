@@ -45,12 +45,13 @@ export default function Infrastructures() {
   )
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-slate-900">
+    <div className="space-y-8">
+      <header className="space-y-3">
+        <p className="eyebrow">Thème · 03</p>
+        <h1 className="display text-4xl text-ink-900">
           Hôpitaux &amp; pharmacies
         </h1>
-        <p className="text-slate-600">
+        <p className="text-ink-700 max-w-2xl leading-relaxed">
           Annuaire des établissements de santé et pharmacies de garde.
         </p>
       </header>
@@ -79,25 +80,26 @@ export default function Infrastructures() {
           },
         ]}
       >
-        <label className="flex flex-col text-xs text-slate-500 flex-1 min-w-[200px]">
-          <span className="mb-1 font-medium uppercase tracking-wide">Recherche</span>
+        <label className="flex flex-col text-xs flex-1 min-w-[200px]">
+          <span className="eyebrow mb-1.5">Recherche</span>
           <input
             type="search"
             placeholder="Nom ou commune…"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            className="border border-slate-300 rounded-md px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+            className="border border-ink-900/10 rounded-xl px-3 py-2 text-sm bg-paper focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500/60 transition"
           />
         </label>
       </FilterBar>
 
       <section className="grid gap-4 sm:grid-cols-3">
         <KpiCard label="Établissements listés" value={filteredEtabs.length} />
-        <KpiCard label="Pharmacies" value={filteredPharms.length} />
+        <KpiCard label="Pharmacies" value={filteredPharms.length} tone="sun" />
         <KpiCard
           label="De garde aujourd'hui"
           value={pharms.rows.filter((p) => p.de_garde).length}
           hint={pharms.meta?.date_garde ? `Au ${pharms.meta.date_garde}` : null}
+          tone="clinic"
         />
       </section>
 
@@ -109,8 +111,16 @@ export default function Infrastructures() {
       >
         <DataTable
           columns={[
-            { key: 'nom', label: 'Nom' },
-            { key: 'type', label: 'Type' },
+            { key: 'nom', label: 'Nom', render: (r) => <span className="font-medium text-ink-900">{r.nom}</span> },
+            {
+              key: 'type',
+              label: 'Type',
+              render: (r) => (
+                <span className="inline-flex items-center text-[11px] px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 border border-brand-500/15">
+                  {r.type}
+                </span>
+              ),
+            },
             {
               key: 'region_code',
               label: 'Région',
@@ -120,7 +130,7 @@ export default function Infrastructures() {
             {
               key: 'telephone',
               label: 'Téléphone',
-              render: (r) => r.telephone || '—',
+              render: (r) => r.telephone || <span className="text-ink-500/60">—</span>,
             },
           ]}
           rows={filteredEtabs}
@@ -133,20 +143,20 @@ export default function Infrastructures() {
         source={pharms.meta?.source}
         maj={pharms.meta?.maj}
       >
-        <div className="mb-3">
-          <label className="inline-flex items-center gap-2 text-sm text-slate-700">
+        <div className="mb-4">
+          <label className="inline-flex items-center gap-2 text-sm text-ink-900 cursor-pointer select-none">
             <input
               type="checkbox"
               checked={onlyGarde}
               onChange={(e) => setOnlyGarde(e.target.checked)}
-              className="w-4 h-4 accent-brand-500"
+              className="w-4 h-4 accent-brand-500 rounded"
             />
             Afficher uniquement les pharmacies de garde
           </label>
         </div>
         <DataTable
           columns={[
-            { key: 'nom', label: 'Nom' },
+            { key: 'nom', label: 'Nom', render: (p) => <span className="font-medium text-ink-900">{p.nom}</span> },
             {
               key: 'region_code',
               label: 'Région',
@@ -159,11 +169,12 @@ export default function Infrastructures() {
               label: 'Garde',
               render: (p) =>
                 p.de_garde ? (
-                  <span className="inline-flex items-center gap-1 text-xs text-brand-700 bg-brand-50 rounded-full px-2 py-0.5">
-                    ● de garde
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-clinic-700 bg-clinic-50 border border-clinic-500/20 rounded-full px-2 py-0.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-clinic-500 animate-pulse" />
+                    De garde
                   </span>
                 ) : (
-                  <span className="text-xs text-slate-400">—</span>
+                  <span className="text-[11px] text-ink-500/60">—</span>
                 ),
             },
           ]}

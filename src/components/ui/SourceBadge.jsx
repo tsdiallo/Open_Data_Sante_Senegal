@@ -3,10 +3,10 @@ import { formatDate } from '../../utils/format.js'
 export default function SourceBadge({ source, maj }) {
   if (!source) return null
   return (
-    <span className="inline-flex items-center gap-1 text-[11px] text-slate-500 bg-slate-100 border border-slate-200 rounded-full px-2 py-0.5 max-w-xs truncate">
-      <span className="font-medium text-slate-600">Source</span>
-      <span className="truncate">: {source}</span>
-      {maj && <span className="hidden sm:inline">— MAJ {formatDate(maj)}</span>}
+    <span className="inline-flex items-center gap-1.5 text-[11px] text-ink-500 bg-sand border border-ink-900/5 rounded-full px-2.5 py-1 max-w-xs truncate">
+      <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0" aria-hidden />
+      <span className="truncate">{source}</span>
+      {maj && <span className="hidden sm:inline text-ink-500/70">· MAJ {formatDate(maj)}</span>}
     </span>
   )
 }

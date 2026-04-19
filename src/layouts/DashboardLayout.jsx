@@ -6,7 +6,7 @@ export default function DashboardLayout() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-1 container-page py-8">
+      <main className="flex-1 container-page py-10 sm:py-12">
         <Outlet />
       </main>
       <Footer />

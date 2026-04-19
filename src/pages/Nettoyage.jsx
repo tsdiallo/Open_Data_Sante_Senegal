@@ -59,10 +59,11 @@ const STEPS = [
 
 export default function Nettoyage() {
   return (
-    <div className="space-y-8">
-      <header className="space-y-2">
-        <h1 className="text-2xl font-bold text-slate-900">Nettoyage des données</h1>
-        <p className="text-slate-600 max-w-2xl">
+    <div className="space-y-10">
+      <header className="space-y-3">
+        <p className="eyebrow">Méthode</p>
+        <h1 className="display text-4xl text-ink-900">Nettoyage des données</h1>
+        <p className="text-ink-700 max-w-2xl leading-relaxed">
           Une donnée brute n'est presque jamais directement utilisable. Voici
           les quatre étapes que nous appliquons pour rendre les jeux de
           données de ce site lisibles, comparables et honnêtes.
@@ -71,31 +72,43 @@ export default function Nettoyage() {
 
       <section className="grid gap-4 sm:grid-cols-2">
         {STEPS.map((s, i) => (
-          <div key={s.title} className="card">
-            <p className="text-xs uppercase tracking-wide text-brand-700 font-medium">
-              Étape {i + 1}
-            </p>
-            <h2 className="font-semibold text-slate-900 mt-1 mb-2">{s.title}</h2>
-            <p className="text-sm text-slate-600">{s.text}</p>
+          <div key={s.title} className="card relative overflow-hidden">
+            <span className="absolute top-0 left-6 w-8 h-[3px] rounded-b bg-brand-500" aria-hidden />
+            <p className="eyebrow mb-2">Étape {String(i + 1).padStart(2, '0')}</p>
+            <h2 className="font-display font-semibold text-xl text-ink-900 mb-2">
+              {s.title}
+            </h2>
+            <p className="text-sm text-ink-700 leading-relaxed">{s.text}</p>
           </div>
         ))}
       </section>
 
-      <section className="space-y-3">
-        <h2 className="font-semibold text-slate-900">Exemple concret</h2>
-        <p className="text-sm text-slate-600 max-w-2xl">
-          Voici un échantillon volontairement désordonné, puis le même
-          échantillon après passage de la pipeline.
-        </p>
+      <section className="space-y-4">
+        <div>
+          <h2 className="font-display font-semibold text-2xl text-ink-900">
+            Exemple concret
+          </h2>
+          <p className="text-sm text-ink-700 max-w-2xl mt-1">
+            Un échantillon volontairement désordonné, puis le même échantillon
+            après passage de la pipeline.
+          </p>
+        </div>
         <DataCleaningExamples />
       </section>
 
-      <section className="space-y-3">
-        <h2 className="font-semibold text-slate-900">Les fonctions utilisées</h2>
-        <p className="text-sm text-slate-600 max-w-2xl">
-          Trois petites fonctions pures, aucune dépendance externe. Elles
-          vivent dans <code className="px-1 bg-slate-100 rounded">src/utils/cleaning.js</code>.
-        </p>
+      <section className="space-y-4">
+        <div>
+          <h2 className="font-display font-semibold text-2xl text-ink-900">
+            Les fonctions utilisées
+          </h2>
+          <p className="text-sm text-ink-700 max-w-2xl mt-1">
+            Trois petites fonctions pures, aucune dépendance externe. Elles
+            vivent dans{' '}
+            <code className="px-1.5 py-0.5 rounded bg-ink-900/5 font-mono text-xs">
+              src/utils/cleaning.js
+            </code>.
+          </p>
+        </div>
         <div className="grid gap-4">
           <CodeBlock title="normalizeRegion()" code={NORMALIZE_CODE} />
           <CodeBlock title="parseWeek()" code={PARSE_WEEK_CODE} />

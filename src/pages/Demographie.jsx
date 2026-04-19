@@ -30,18 +30,19 @@ export default function Demographie() {
   }))
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-slate-900">Démographie</h1>
-        <p className="text-slate-600">
+    <div className="space-y-8">
+      <header className="space-y-3">
+        <p className="eyebrow">Thème · 02</p>
+        <h1 className="display text-4xl text-ink-900">Démographie</h1>
+        <p className="text-ink-700 max-w-2xl leading-relaxed">
           Population du Sénégal par région — chiffres du RGPH-5.
         </p>
       </header>
 
       <section className="grid gap-4 sm:grid-cols-3">
         <KpiCard label="Population totale" value={formatNumber(totalPop)} hint="14 régions" />
-        <KpiCard label="Superficie" value={`${formatNumber(totalKm2)} km²`} />
-        <KpiCard label="Densité moyenne" value={`${formatNumber(densityAvg)} hab/km²`} />
+        <KpiCard label="Superficie" value={`${formatNumber(totalKm2)} km²`} tone="sun" />
+        <KpiCard label="Densité moyenne" value={`${formatNumber(densityAvg)} hab/km²`} tone="neutral" />
       </section>
 
       <ChartCard
@@ -56,7 +57,7 @@ export default function Demographie() {
       <ChartCard title="Détail par région" source={SOURCE} maj={MAJ}>
         <DataTable
           columns={[
-            { key: 'nom', label: 'Région' },
+            { key: 'nom', label: 'Région', render: (r) => <span className="font-medium text-ink-900">{r.nom}</span> },
             {
               key: 'population',
               label: 'Population',

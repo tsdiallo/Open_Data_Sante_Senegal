@@ -6,7 +6,7 @@ export default function InfoTooltip({ text }) {
     <span className="relative inline-block">
       <button
         type="button"
-        className="w-5 h-5 inline-flex items-center justify-center rounded-full bg-slate-100 text-slate-500 text-xs font-semibold hover:bg-slate-200"
+        className="w-5 h-5 inline-flex items-center justify-center rounded-full bg-ink-900/5 text-ink-500 text-[11px] font-semibold hover:bg-brand-500/10 hover:text-brand-700 transition"
         aria-label="Plus d'infos"
         onClick={() => setOpen((v) => !v)}
         onBlur={() => setOpen(false)}
@@ -14,7 +14,7 @@ export default function InfoTooltip({ text }) {
         i
       </button>
       {open && (
-        <span className="absolute z-10 left-6 top-0 w-64 p-2 rounded-md bg-slate-900 text-white text-xs shadow-lg">
+        <span className="absolute z-10 left-6 top-0 w-64 p-3 rounded-lg bg-ink-900 text-white text-xs leading-relaxed shadow-xl">
           {text}
         </span>
       )}

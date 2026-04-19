@@ -57,10 +57,11 @@ export default function Epidemiologie() {
   const letalite = totalCas ? ((totalDeces / totalCas) * 100).toFixed(2) : '—'
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-slate-900">Épidémiologie</h1>
-        <p className="text-slate-600">
+    <div className="space-y-8">
+      <header className="space-y-3">
+        <p className="eyebrow">Thème · 01</p>
+        <h1 className="display text-4xl text-ink-900">Épidémiologie</h1>
+        <p className="text-ink-700 max-w-2xl leading-relaxed">
           Cas hebdomadaires de maladies surveillées, par région.
         </p>
       </header>
@@ -89,8 +90,8 @@ export default function Epidemiologie() {
 
       <section className="grid gap-4 sm:grid-cols-3">
         <KpiCard label="Cas cumulés" value={formatNumber(totalCas)} hint="sur la période affichée" />
-        <KpiCard label="Décès" value={formatNumber(totalDeces)} />
-        <KpiCard label="Létalité" value={`${letalite}%`} hint="décès / cas" />
+        <KpiCard label="Décès" value={formatNumber(totalDeces)} tone="clinic" />
+        <KpiCard label="Létalité" value={`${letalite}%`} hint="décès / cas" tone="sun" />
       </section>
 
       <ChartCard
@@ -115,7 +116,7 @@ export default function Epidemiologie() {
         source={meta.source}
         maj={meta.maj}
       >
-        <BarByRegion data={byRegion} dataKey="cas" valueLabel="Cas" color="#dc2626" />
+        <BarByRegion data={byRegion} dataKey="cas" valueLabel="Cas" color="#E31B23" />
       </ChartCard>
     </div>
   )
